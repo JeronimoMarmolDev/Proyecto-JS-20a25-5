@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: radial-gradient(ellipse, rgb(20, 20, 20) 0%, rgb(0, 0, 0) 100%);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding-left: 55px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: #17ebfb;
+}
+
+
+
+section {
+    height: 100vh;
+    /*Estructura Flex para el HTML*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 5px black;
+}
+
+
+#inicio {
+    background-image: url(LionIni.png);
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+#inicio h2 {
+    margin: 0;
+    font-size: 150px;
+    color: white;
+}
+
+#inicio p {
+    margin: 0;
+    font-size: 50px;
+    color: white;
+    text-decoration: double;
+    font-style: italic;
+}
+
+
+#acerca {
+    background: radial-gradient(ellipse, rgb(37, 55, 255) 0%, rgb(35, 1, 231) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-left,
+.content-right {
+    width: 100%;
+    text-align: center;
+}
+
+#acerca h2{
+    font-size: 40px;
+    padding-right: 60px;
+}
+
+#acerca p{
+    font-size: 20px;
+    padding-right: 60px;
+}
+
+#servicios {
+    background: radial-gradient(ellipse, rgb(0, 246, 0) 0%, rgb(0, 86, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-left-serv,
+.content-right-serv {
+    width: 100%;
+    text-align: center;
+}
+
+#servicios h2{
+    font-size: 40px;
+    padding-left: 60px;
+    text-decoration: underline;
+}
+
+#servicios p{
+    font-size: 20px;
+    padding-left: 60px;
+}
+
+#contacto {
+    background: radial-gradient(ellipse, rgb(255, 255, 255) 0%, rgb(72, 72, 72) 100%);
+}
+
+#contacto h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#contacto form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    /* Transformación */
+}
+
+/* Estilos para los radio buttons y labels */
+
+#contacto form:hover {
+    transform: scale(1.05);
+    /* Animacion efecto de escala al pasar el cursor */
+}
+
+#contacto label{
+    font-weight: bold;
+}
+
+
+input,
+textarea,
+select {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Transición de color de fondo */
+}
+
+input[type="submit"]:hover {
+    background-color: #777;
+}
+
+#footer{
+    background: radial-gradient(ellipse, rgb(20, 20, 20) 0%, rgb(0, 0, 0) 100%);
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer p{
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+/* Responsive: Media Queries para dispositivos de diferentes tamaños */
+@media screen and (max-width: 1061px) {
+    section {
+        font-size: 16px;
+    }
+    #acerca h2{
+        font-size: 20px; 
+    }
+    #acerca p{
+        font-size: 10px;   
+    }
+    #servicios h2{
+        font-size: 18px; 
+    }
+    #servicios p{
+        font-size: 9px;
+    }
+    #contacto form {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        font-size: 14px;
+    }
+
+    #contacto form {
+        max-width: 250px;
+    }
+}

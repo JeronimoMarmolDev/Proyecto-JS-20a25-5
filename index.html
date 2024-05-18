@@ -1,0 +1,154 @@
+<!--*-El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page. 
+*-El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios. 
+*-Tener al menos una página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). Para el diseño debe usarse CSS. 
+*-Utilizar al menos una animación, transformación o una transición. 
+*-Poseer una estructura HTML maquetada con Flexbox y/o Grid. 
+*-Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon.
+*-El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio).
+*-La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio) 
+*-El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de https://validator.w3.org/ sin errores. (Mandatorio) 
+*-Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion Force</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icopesa.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Lion Force</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--4 Secciones de la One Page-->
+
+    <section id="inicio">
+        <h2>Lion<br>Force</h2>
+        <p>Nutrición Funcional</p>
+        <p>Condición Fisica</p>
+        <p>Bienestar Personal</p>
+    </section>
+
+    <section id="acerca">
+        <div class="content-left">
+            <img src="Frasco.png" alt="Descripción de la imagen">
+        </div>
+        <div class="content-right">
+            <h2> La Proteína en Polvo: Un Aliado Esencial para tu Rendimiento y Recuperación</h2>
+            <p> La proteína en polvo ha emergido como un componente esencial en la dieta de atletas, culturistas y
+                entusiastas del fitness debido a sus numerosos beneficios para la salud y el rendimiento físico. Este
+                suplemento versátil proporciona una fuente concentrada de proteínas de alta calidad, esencial para la
+                construcción y reparación de tejidos musculares.
+                <br>
+            <p> <b>Optimización del Rendimiento Deportivo:</b> La proteína en polvo es un recurso invaluable para
+                aquellos que
+                buscan maximizar su rendimiento deportivo. Al proporcionar a los músculos los aminoácidos necesarios, la
+                proteína en polvo ayuda a promover la síntesis de proteínas musculares, lo que resulta en una mayor
+                fuerza, resistencia y recuperación muscular después del ejercicio.
+                <br>
+            <p> <b>Facilita la Recuperación Muscular:</b> Después de un entrenamiento intenso, los músculos necesitan
+                nutrientes adecuados para recuperarse y crecer. La proteína en polvo ofrece una forma rápida y
+                conveniente de suministrar a los músculos los aminoácidos esenciales que necesitan para reparar el
+                tejido muscular dañado durante el ejercicio, acelerando así el proceso de recuperación y reduciendo el
+                riesgo de lesiones.
+                <br>
+            <p> En resumen, la inclusión de proteína en polvo en tu régimen nutricional no solo puede mejorar tu
+                rendimiento deportivo, sino que también puede acelerar tu recuperación muscular, permitiéndote alcanzar
+                tus objetivos de fitness de manera más efectiva y eficiente.</p>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="content-left-serv">
+            <h2>Descubre Nuestro Local de Proteínas en Polvo en Alto Palermo</h2>
+            <p><b>Tu Destino para el Fitness y la Nutrición</b></p>
+            <p>Sumérgete en el mundo del fitness y la nutrición visitando nuestro local de proteínas en polvo en Alto
+                Palermo. Ubicado en el corazón de Buenos Aires, nuestro local es tu destino definitivo para alcanzar tus
+                objetivos de salud y bienestar.</p>
+            <p><b>Una Amplia Selección de Productos de Alta Calidad</b></p>
+
+            <p>En nuestro local, encontrarás una amplia gama de proteínas en polvo, suplementos y productos relacionados
+                con el fitness, cuidadosamente seleccionados para satisfacer las necesidades de atletas, entusiastas del
+                fitness y personas preocupadas por su salud en general. Desde proteínas de suero de leche hasta mezclas
+                especializadas para aumentar la masa muscular o mejorar la recuperación, tenemos todo lo que necesitas
+                para llevar tu rendimiento al siguiente nivel.</p>
+
+            <p>Visítanos hoy mismo en Alto Palermo y déjate sorprender por nuestra variedad de productos, conocimiento
+                experto y un servicio al cliente excepcional. ¡Tu viaje hacia un estilo de vida más saludable comienza
+                aquí!</p>
+        </div>
+
+        <div class="content-right-serv">
+            <!-- Iframe de Mapa de Google Maps -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.462673436778!2d-58.41658878431419!3d-34.58579366502066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca02263f4c5b%3A0xe31c291a1c6a2f7b!2sAlto%20Palermo%20Shopping!5e0!3m2!1sen!2sar!4v1622698779977!5m2!1sen!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!--Formulario de contacto con 7 campos que incluye un checkbox, un select y una imagen. Tiene validacion JS-->
+    <section id="contacto">
+        <h2>Formulario de Contacto <img src="icoo.png"></h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="gender" style="display: block; padding-bottom: 10px;">Género:</label>
+            <label for="male" style="font-weight: normal;">Masculino</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female" style="font-weight: normal;">Femenino</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+
+
+            <label for="interest" style="display: block; padding-top: 10px;">Interés:</label>
+            <select id="interest" name="interest" required>
+                <option value="">Selecciona</option>
+                <option value="web">Desarrollo Web</option>
+                <option value="mobile">Desarrollo Móvil</option>
+                <option value="design">Diseño Gráfico</option>
+            </select>
+
+            <label style="display: block; padding-bottom: 10px; padding-top: 10px;">Preferencias de
+                comunicación:</label>
+            <input type="checkbox" id="preference1" name="preference1" value="option1">
+            <label for="preference1" style="font-weight: normal;">Mañana</label>
+            <input type="checkbox" id="preference2" name="preference2" value="option2">
+            <label for="preference2" style="font-weight: normal;">Tarde</label>
+            <input type="checkbox" id="preference3" name="preference3" value="option3">
+            <label for="preference3" style="font-weight: normal;">Noche</label>
+
+            <label for="file" style="display: block; padding-top: 10px;">Adjuntar Imagen:</label>
+            <input type="file" id="file" name="file" accept="image/*" required>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2024 LionForce S.A. Todos los derechos reservados. Dirección: Av. Santa Fe 3252, Local 123, Alto Palermo, Buenos Aires, Argentina.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
